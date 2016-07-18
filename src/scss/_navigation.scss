@@ -1,0 +1,74 @@
+.navbar-fixed-top {
+    background: transparent;
+    border: none;
+    @media screen and (max-width: 767px) {
+        background: #28292a;
+        box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+    }
+}
+
+.navbar-default .navbar-brand {
+    color: #eaeaea;
+    font-size: 1.5em;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    @media screen and (max-width: 767px) {
+        color: white;
+        padding-top: 10px;
+    }
+}
+
+.nav.navbar-nav.navbar-right {
+    li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        a {
+            color: #eaeaea;
+            font-size: 1.2em;
+            @media screen and (max-width: 768px) {
+                margin-right: 15px;
+            }
+            &:hover {
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-header {
+        background: #2b3f50;
+    }
+}
+#brand {
+    height: 30px;
+    width: 30px;
+    display: inline;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+    color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+/* ------------------ After Scroll ------------------------ */
+
+.show {
+    background: lighten($panel-color, 10%);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+.transition {
+    transition: all 0.2s ease-in-out;
+}
+/* ------------------ Fixed Nav Solution ------------------------ */
+.navfix:before {
+    display: block;
+    position: relative;
+    margin-top: -50px;
+    height: 50px;
+    content: " ";
+    visibility: hidden;
+}

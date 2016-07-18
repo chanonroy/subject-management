@@ -1,0 +1,46 @@
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+
+/* Background */
+  background-image: url("../img/sky.jpeg");
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  background-color: rgba(45, 142, 168, 0.50);
+  background-blend-mode: overlay; /* multiply, overlay */
+  text-shadow: darken(grey, 25%) 0.15em 0.15em 0.15em;
+
+  h1 {
+    font-weight: bold;
+  }
+
+  .jumbo-text {
+    color: white;
+    text-align: center;
+    h2 {
+      margin-bottom: 65px;
+    }
+    .jumbo-button {
+      background-color: $jumbo-button;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      padding: 15px 45px;
+      text-shadow: none;
+      margin-top: 50px;
+      border-radius: 25px;
+      transition: all 0.5s ease;
+
+    &:hover {
+      color: white;
+      background-color: lighten($jumbo-button, 10%);
+      box-shadow: 0px 0px 15px 2px  lighten($jumbo-button, 10%);
+    }
+  }
+  }
+}

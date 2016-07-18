@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'navigation';
+@import 'jumbotron';
+@import 'contact';
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $panel-color;
+    margin: 0;
+    padding: 200px 0px;
+    border-radius: 0;
+}
