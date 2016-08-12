@@ -1,15 +1,11 @@
 @import 'variables';
 @import 'navigation';
 @import 'jumbotron';
+@import 'panels';
 @import 'contact';
 
-.panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 
-    background-color: $panel-color;
-    margin: 0;
-    padding: 200px 0px;
-    border-radius: 0;
+body {
+  font-family: 'Roboto', sans-serif;
 }

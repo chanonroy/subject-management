@@ -1,46 +1,55 @@
 .jumbotron {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  margin: 0;
-
-/* Background */
-  background-image: url("../img/sky.jpeg");
-  background-size: cover;
-  background-position: top;
-  overflow: hidden;
-  background-color: rgba(45, 142, 168, 0.50);
-  background-blend-mode: overlay; /* multiply, overlay */
-  text-shadow: darken(grey, 25%) 0.15em 0.15em 0.15em;
-
-  h1 {
-    font-weight: bold;
-  }
-
-  .jumbo-text {
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    h2 {
-      margin-bottom: 65px;
+    height: 100vh;
+    margin: 0;
+    /* Background */
+    background-image: url("../img/galaxy.jpg");
+    background-size: cover;
+    background-position: right;
+    overflow: hidden;
+    text-shadow: darken(grey, 25%) 0.15em 0.15em 0.15em;
+    h1 {
+        font-weight: bold;
     }
-    .jumbo-button {
-      background-color: $jumbo-button;
-      color: white;
-      text-decoration: none;
-      font-size: 1.2em;
-      padding: 15px 45px;
-      text-shadow: none;
-      margin-top: 50px;
-      border-radius: 25px;
-      transition: all 0.5s ease;
-
-    &:hover {
-      color: white;
-      background-color: lighten($jumbo-button, 10%);
-      box-shadow: 0px 0px 15px 2px  lighten($jumbo-button, 10%);
+    .jumbo-text {
+        color: white;
+        text-align: center;
+        h2 {
+            margin-bottom: 65px;
+        }
+        .jumbo-button {
+            background-color: $jumbo-button;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 15px 45px;
+            text-shadow: none;
+            margin-top: 50px;
+            border-radius: 25px;
+            transition: all 0.5s ease;
+            &:hover {
+                color: white;
+                background-color: lighten($jumbo-button, 10%);
+                box-shadow: 0 0 15px 2px lighten($jumbo-button, 10%);
+            }
+        }
     }
-  }
-  }
+}
+.jumbo-cover {
+    position: absolute;
+    z-index: 2;
+    height: 300px;
+    width: 100%;
+    margin-top: -300px;
+    background: rgba(255,255,255,0);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, $panel-color 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(47%, rgba(246,246,246,0)), color-stop(100%, $panel-color));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, $panel-color 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, $panel-color 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, $panel-color 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(246,246,246,0) 47%, $panel-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1f2937', GradientType=0 );
 }
