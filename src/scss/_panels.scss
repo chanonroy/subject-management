@@ -6,17 +6,57 @@
     background-color: $panel-color;
     margin: 0;
     padding: 50px 0px 50px 0px;
-    height: 600px;
     border-radius: 0;
 }
 
-#input {
-  background-color: lightgreen;
-}
-
-#about {
-  color: lightgrey;
-  p {
-    color: grey;
+// About Section
+  .about {
+    color: lightgrey;
+    p {
+      color: grey;
+    }
   }
+
+  .about__title {
+      text-align: center;
+      font-size: 3em;
+      margin-bottom: 75px;
+  }
+
+  .about__image {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      img {
+        border-radius: 5px;
+      }
+  }
+
+// Divider
+  .divider {
+    margin-top: 50px;
+  }
+
+  .divider__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    color: lightgrey;
+  }
+
+    .divider--blue {
+        background-color: rgb(36, 113, 150);
+    }
+
+    .divider--orange {
+        background-color: rgb(191, 162, 73);
+    }
+
+    .divider--green {
+        background-color: rgb(105, 177, 83);
+    }
+
+#input {
+  background-color: $panel-color;
 }

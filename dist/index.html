@@ -20,9 +20,9 @@
 <body>
 
     <!-- Top Nav Bar -->
-    <div class="navbar-custom">
+    <div class="customNav">
       <div class="container">
-        <div class="navbar-branding">
+        <div class="customNav__brand">
           <div> <a href="#"> <span><img src="img/logo-solid-color.png"></span> <strong> SUBJECT </strong> Management </a> </div>
           <div>
             <span> <a href="#"> About </a> </span>
@@ -36,61 +36,88 @@
     <!-- Jumbotron -->
     <section id="1">
         <div class="jumbotron">
-            <div class="jumbo-text">
+            <div class="jumbotron__text">
                 <h1> The best talent starts here </h1>
                 <h2> We manage the best in the industry </h2>
-                <a class="jumbo-button" href="#"> Explore </a>
+                <a class="jumbotron__button" href="#"> Explore </a>
             </div>
         </div>
         <div class="jumbo-cover"></div>
     </section>
 
-    <section id="about">
+    <!-- About Section -->
+    <section class="about">
       <div class="container-fluid panel">
         <div class="container">
-          <h1>
-            About Us
+
+          <h1 class="about__title">
+            About
           </h1>
-          <p>
-            Bacon ipsum dolor amet cow kielbasa meatball capicola pancetta
-            prosciutto ham hock picanha tongue pork chop swine short ribs kevin.
-            Venison hamburger sirloin alcatra ground round. Pork brisket shankle,
-            porchetta t-bone ribeye jowl frankfurter filet mignon rump pig bresaola sirloin.
-            Ham hock pork loin pork chop, pastrami sausage porchetta drumstick
-            beef alcatra ham sirloin kielbasa.
-          </p>
-          <p>
-            Kielbasa tri-tip pastrami biltong spare ribs shankle beef ribs
-            alcatra jerky frankfurter boudin prosciutto pork jowl pork belly.
-            T-bone brisket bacon fatback chuck, hamburger alcatra.
-          </p>
+
+          <div class="col-sm-6">
+            <h2>
+              Subject
+            </h2>
+            <p>
+              Bacon ipsum dolor amet cow kielbasa meatball capicola pancetta
+              prosciutto ham hock picanha tongue pork chop swine short ribs kevin.
+              Venison hamburger sirloin alcatra ground round.
+            </p>
+            <p>
+              Kielbasa tri-tip pastrami biltong spare ribs shankle beef ribs
+              alcatra jerky frankfurter boudin prosciutto pork jowl pork belly.
+              T-bone brisket bacon fatback chuck, hamburger alcatra.
+            </p>
+          </div>
+
+          <div class="col-sm-6 about__image">
+            <img src="http://placehold.it/350x200" />
+          </div>
+
+          <div class="col-sm-6">
+            <h2>
+              Management
+            </h2>
+            <p>
+              Bacon ipsum dolor amet cow kielbasa meatball capicola pancetta
+              prosciutto ham hock picanha tongue pork chop swine short ribs kevin.
+              Venison hamburger sirloin alcatra ground round.
+            </p>
+            <p>
+              Kielbasa tri-tip pastrami biltong spare ribs shankle beef ribs
+              alcatra jerky frankfurter boudin prosciutto pork jowl pork belly.
+              T-bone brisket bacon fatback chuck, hamburger alcatra.
+            </p>
+          </div>
+
+          <div class="col-sm-6 about__image">
+            <img src="http://placehold.it/350x200" />
+          </div>
+
         </div>
       </div>
     </section>
 
-
-    <section id="artist">
-      <div class="container-fluid panel">
-        <div class="container">
-          <h1>
-            Artist Featurette
-          </h1>
-          <p>
-            Bacon ipsum dolor amet cow kielbasa meatball capicola pancetta
-            prosciutto ham hock picanha tongue pork chop swine short ribs kevin.
-            Venison hamburger sirloin alcatra ground round. Pork brisket shankle,
-            porchetta t-bone ribeye jowl frankfurter filet mignon rump pig bresaola sirloin.
-            Ham hock pork loin pork chop, pastrami sausage porchetta drumstick
-            beef alcatra ham sirloin kielbasa.
-          </p>
-          <p>
-            Kielbasa tri-tip pastrami biltong spare ribs shankle beef ribs
-            alcatra jerky frankfurter boudin prosciutto pork jowl pork belly.
-            T-bone brisket bacon fatback chuck, hamburger alcatra.
-          </p>
+    <!-- Three panels with content -->
+    <div class="divider">
+        <div class="divider__block divider--blue col-sm-4">
+          <h1> One </h1>
         </div>
+
+        <div class="divider__block divider--orange col-sm-4">
+          <h1> Two </h1>
+        </div>
+
+        <div class="divider__block divider--green col-sm-4">
+          <h1> Three </h1>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="container">
+        Kuja
       </div>
-    </section>
+    </div>
 
     <div id="input" class="container-fluid panel">
       Input
