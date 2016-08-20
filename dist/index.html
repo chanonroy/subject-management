@@ -20,30 +20,18 @@
 <body>
 
     <!-- Top Nav Bar -->
-    <nav class="navbar navbar-default navbar-fixed-top transition">
-        <div class="container">
-            <!-- Logo here -->
-            <div class="navbar-header">
-                <!-- Responsive Hamburger Icon -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#1"><strong> Subject Management </strong></a>
-            </div>
-
-            <!-- Menu Items -->
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#2">About</a></li>
-                    <li><a href="#3">Artists</a></li>
-                    <li><a href="#4">Contact</a></li>
-                </ul>
-            </div>
+    <div class="navbar-custom">
+      <div class="container">
+        <div class="navbar-branding">
+          <div> <a href="#"> <span><img src="img/logo-solid-color.png"></span> <strong> SUBJECT </strong> Management </a> </div>
+          <div>
+            <span> <a href="#"> About </a> </span>
+            <span> <a href="#"> Artists </a> </span>
+            <span> <a href="#"> Contact </a> </span>
+          </div>
         </div>
-    </nav>
+      </div>
+    </div>
 
     <!-- Jumbotron -->
     <section id="1">
@@ -103,6 +91,10 @@
         </div>
       </div>
     </section>
+
+    <div id="input" class="container-fluid panel">
+      Input
+    </div>
 
     <div id="contact" class="container-fluid panel">
       Contact

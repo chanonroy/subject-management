@@ -5,10 +5,18 @@
 
     background-color: $panel-color;
     margin: 0;
-    padding: 100px 0px 50px 0px;
+    padding: 50px 0px 50px 0px;
+    height: 600px;
     border-radius: 0;
+}
+
+#input {
+  background-color: lightgreen;
 }
 
 #about {
   color: lightgrey;
+  p {
+    color: grey;
+  }
 }
