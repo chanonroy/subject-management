@@ -36,13 +36,14 @@
 // Divider
   .divider {
     margin-top: 50px;
+    height: 250px;
   }
 
   .divider__block {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 100%;
     color: lightgrey;
   }
 
@@ -59,19 +60,59 @@
     }
 
 // Kuja
-  .kuja {
-    background-color: lightgrey;
-    height: 100vh;
-  }
+    .kuja {
+      background-color: grey;
+      height: 700px;
+      width: 100%;
+    }
+    .kuja__right {
+      background-color: lightgrey;
+      height: 100%;
+    }
+    .kuja__left {
+      background-color: white;
+      height: 100%;
+    }
 
-// Input
-  .input {
-    background-color: rgb(98, 177, 168);
-    height: 175px;
-  }
+// Email
+    .email {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: mediumturquoise;
+      height: 200px;
+    }
 
-// Contact
-.contact {
-  background-color: $panel-color;
-  height: 250px;
-}
+// Footer
+    .footer {
+      width: 100%;
+    }
+    .footer__details {
+      padding: 50px;
+      h2 {
+        color: lightgrey;
+      }
+      p {
+        color: grey;
+      }
+    }
+    .footer__signature {
+      color: grey;
+      padding-top: 40px;
+      text-align: center;
+    }
+    .footer__social__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding-top: 5px;
+      span {
+        color: grey;
+        margin: 5px;
+        transition: all 0.5s ease;
+        &:hover {
+          color: white;
+        }
+      }
+    }
